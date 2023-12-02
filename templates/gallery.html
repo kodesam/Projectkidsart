@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Artwork Gallery</h1>
+    <div class="grid-container">
+        {% for artwork in artworks %}
+            <div class="grid-item">
+                <img src="{{ artwork }}" alt="Artwork">
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
